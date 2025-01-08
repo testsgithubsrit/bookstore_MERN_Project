@@ -1,4 +1,5 @@
 import React from 'react'
+import toast from 'react-hot-toast';
 import './Signup.css'
 import Login from '../Login/Login'
 import { useState } from 'react'
@@ -30,16 +31,18 @@ try{
   const json=await response.json();
   console.log(json)
   if (json.success) {
-    alert("User created successfully!");
+    //alert("User created successfully!");
+    toast.success('hey! thanks for signup');
    navigate("/");
   
   } 
     else {
-    alert("Email already in use.");
+    toast.error("Email already in use.");
   }
 } catch (error) {
   console.error("Error during sign up:", error);
-  alert("An error occurred. Please try again later.");
+  //alert("An error occurred. Please try again later.");
+  toast.error("An error occurred. Please try again later.");
 }
   };
 

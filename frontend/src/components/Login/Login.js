@@ -1,4 +1,5 @@
 import React from 'react';
+import toast from 'react-hot-toast';
 //import Course from '../Course/Course';
 import { Link } from 'react-router-dom';
 import "./Login.css"
@@ -32,7 +33,9 @@ const navigate=useNavigate();
       console.log(json);
 
       if (json.success) {
-        alert("Thanks for logging in!");
+       // alert("Thanks for logging in!");
+        toast.success('Your are logged in.');
+
       
       // Close the modal after successful login
       document.getElementById("exampleModal").close();  // Close the modal
@@ -49,7 +52,8 @@ const navigate=useNavigate();
 
         
       } else {
-        alert("Please enter valid credentials.");
+       // alert("Please enter valid credentials.");
+       toast.error("Please enter valid credentials.");
       }
     } catch (error) {
       console.error("Error during sign up:", error);

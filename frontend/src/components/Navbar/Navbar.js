@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import toast from 'react-hot-toast';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import { Link, useNavigate } from "react-router-dom";
@@ -32,7 +33,7 @@ useEffect(()=>{
   localStorage.removeItem("authToken");
   localStorage.removeItem("userEmail");
  // setIsLoggedIn(false); // Update login state
-  alert("You have successfully logged out.");
+  toast.success("You have successfully logged out.");
   navigate("/")
 };
 

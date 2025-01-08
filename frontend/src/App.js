@@ -6,11 +6,13 @@ import Contact from './components/Contact/Contact';
 import About from './components/About/About';
 import Footer from './components/Footer/Footer';
 import Signup from './components/Signup/Signup';
+import  { Toaster } from 'react-hot-toast';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {  
   return (
+    <>
     <Router>
        <Routes> 
         {/* Render Navbar and Footer only for specific routes */}
@@ -35,6 +37,8 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         </Routes>
     </Router>
+     <Toaster />
+     </>
   );
 }   
 
