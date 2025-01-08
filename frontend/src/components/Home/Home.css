@@ -1,0 +1,40 @@
+.main_header{
+    margin-top: 40px;
+}
+
+
+#el{
+    color: rgb(228, 61, 228);
+}
+
+.book{
+    height: 400px;
+}
+.main_header_left{
+    
+    margin-top: 25px;
+}
+.form-control:focus{
+    outline: none;
+    box-shadow: none;
+    
+}
+.btn1{
+    background-color: rgb(245, 71, 175);
+  
+}
+.btn1:hover{
+    background-color:rgb(245, 71, 175) ;
+    font-size: 20px;
+}
+.para{
+    margin-top: 40px;
+}
+.email{
+    margin-top: 25px;
+}
+.btns{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+

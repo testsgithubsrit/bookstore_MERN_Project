@@ -1,0 +1,11 @@
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.dark .navbar {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+  

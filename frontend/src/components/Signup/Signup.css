@@ -1,0 +1,34 @@
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color:white; /* Optional: Light background */
+    color: black;
+  }
+  .modal-dialogs{
+    background-color: rgb(230, 235, 235);
+    padding: 80px;
+    border-radius: 20px;
+    box-shadow: 1px 3px 12px 1.9px rgb(53, 50, 53) ;
+    width: 80%;
+
+  }
+  
+  .ac{
+    margin-left: 40px;
+  }
+  .l{
+    display: flex;
+    float: right;
+    cursor: pointer;
+    color: blue;
+  }
+  .btn4{
+    background-color: rgb(228, 22, 204);
+    opacity: 0.7;
+  }
+  .btn4:hover{
+    background-color: rgb(228, 22, 204);
+    opacity: 1;
+  }

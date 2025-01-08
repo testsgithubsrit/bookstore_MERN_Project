@@ -1,0 +1,61 @@
+/* Navbar.css */
+/*.navbar.fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030; 
+  }*/
+  
+  
+/* Navbar shadow when sticky */
+.stricky-navbar {
+    box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.2) !important; /* शैडो */
+  background-color: #f6eded !important; /* बैकग्राउंड रंग */
+    transition: all 0.3s ease-in-out; /* स्मूद ट्रांज़िशन */
+  }
+  
+  
+.navbar{
+    position: sticky;
+    transition: all 0.3s ease-in-out;
+    
+  
+}
+.nav-item:hover{
+    text-decoration:none;
+    border-bottom: 2px solid black;
+    
+}
+
+
+.navbar{
+    background-color: black;
+}
+.navbar-brand {
+    padding-left: 130px;
+}
+@media screen and (max-width: 1238px) {
+    .navbar-brand {
+        padding-left: 90px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-brand {
+        padding-left: 1px;
+    }
+
+}
+.btn3{
+    margin-right: 10px;
+}
+@media screen and (max-width: 991px) {
+    .mode{
+        margin-top: 10px;
+    
+    }
+}
+
+
+
